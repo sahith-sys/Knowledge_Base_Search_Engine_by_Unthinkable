@@ -1,0 +1,48 @@
+# === Python & Virtual Environment ===
+venv/
+.env
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# === IDE & Editor Files ===
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# === Streamlit Cache ===
+.streamlit/
+logs/
+
+# === FastAPI & Chroma/FAISS Data ===
+faiss_index/
+chroma_store/
+uploaded_pdfs/
+
+# === Build / Distribution ===
+build/
+dist/
+*.spec
+
+# === OS Generated Files ===
+ehthumbs.db
+Icon?
+desktop.ini
+
+# === Jupyter / Notebooks ===
+.ipynb_checkpoints/
+*.ipynb
+
+# === Temporary Files ===
+*.tmp
+*.bak
+*.old
+*.log
