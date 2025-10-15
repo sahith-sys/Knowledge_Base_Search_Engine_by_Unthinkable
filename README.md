@@ -14,11 +14,11 @@ link
 
 ## Features
 
-- 📄 Upload and parse PDFs  
-- 🧠 Embed document chunks with **Generative AI embeddings**  
-- 💂️ Store embeddings in **Pinecone vector database**  
-- 💬 Query documents using **LLM + RAG**  
-- 🌍 Microservice architecture (Streamlit client)
+- Upload and parse PDFs  
+- Embed document chunks with **Generative AI embeddings**  
+- Store embeddings in **Pinecone vector database**  
+- Query documents using **LLM + RAG**  
+- Microservice architecture (Streamlit client)
 
 
 
@@ -29,7 +29,7 @@ Instead of relying solely on pre-trained data, the model retrieves relevant info
 
 
 ## Application Diagram
-<img width="1320" height="521" alt="image" src="https://github.com/user-attachments/assets/b6d8de40-2b81-4d4c-b475-b1e1ba81263f" />
+<img width="1600" height="554" alt="image" src="https://github.com/user-attachments/assets/19fb65e8-e1f4-486e-9810-e72608d20b1f" />
 
 
 ## Folder Structure
@@ -54,6 +54,19 @@ Instead of relying solely on pre-trained data, the model retrieves relevant info
 └── README.md
 
 ```
+
+## Tech Stack
+
+| Layer       | Technology / Tool                       | Purpose                                      |
+|------------|----------------------------------------|---------------------------------------------|
+| Frontend    | Streamlit                               | UI for PDF upload and query submission      |
+| Backend     | FastAPI                                 | API endpoints for document ingestion & query handling |
+| Vector Store| FAISS / ChromaDB                        | Store embeddings for retrieval              |
+| Embeddings  | HuggingFace (`all-MiniLM-L6-v2`)       | Convert document chunks into vector embeddings |
+| LLM         | Google Generative AI (`gemini-2.5-flash`) | Generate context-aware answers             |
+| PDF Parsing | PyPDF2                                  | Extract text from uploaded PDFs             |
+| Environment | Python 3.12, venv                       | Dependency management                        |
+| Others      | dotenv                                   | Manage API keys and environment variables   |
 
 ## Getting started it locally
 
@@ -96,6 +109,14 @@ uvicorn main:app --reload
 
 # Environmental variables
 GOOGLE_API_KEY="your_gemini_api_key_here"
+
+## API Endpoints
+
+| Method | Endpoint        | Description                      | Payload                                 |
+|--------|----------------|----------------------------------|----------------------------------------|
+| POST   | `/upload_pdfs/` | Upload PDFs and build vectorstore | `files: List[UploadFile]`              |
+| POST   | `/ask/`         | Ask a question and get an answer | `{"question": "your question here"}`  |
+| GET    | `/health/`      | Check server health              | None                                   |
 
 
 ## Todo
