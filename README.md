@@ -10,7 +10,7 @@ This project is ideal for students, researchers, or professionals who want to **
 
 ## Demo
 
-link
+https://drive.google.com/file/d/1xoCXtdt1IjelnDxM2upOazUsW9SCi8As/view?usp=sharing
 
 ## Features
 
