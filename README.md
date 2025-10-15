@@ -12,11 +12,15 @@ This project is ideal for students, researchers, or professionals who want to **
 
 https://drive.google.com/file/d/1xoCXtdt1IjelnDxM2upOazUsW9SCi8As/view?usp=sharing
 
+## Output User Interface
+<img width="1917" height="922" alt="image" src="https://github.com/user-attachments/assets/20fe6c0d-a079-48e2-bf75-ad4d9b5278a9" />
+
+
 ## Features
 
 - Upload and parse PDFs  
 - Embed document chunks with **Generative AI embeddings**  
-- Store embeddings in ** vector database**  
+- Store embeddings in **vector database**  
 - Query documents using **LLM + RAG**  
 - Microservice architecture (Streamlit client + FastAPI server)
 
