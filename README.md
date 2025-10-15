@@ -16,9 +16,9 @@ link
 
 - Upload and parse PDFs  
 - Embed document chunks with **Generative AI embeddings**  
-- Store embeddings in **Pinecone vector database**  
+- Store embeddings in ** vector database**  
 - Query documents using **LLM + RAG**  
-- Microservice architecture (Streamlit client)
+- Microservice architecture (Streamlit client + FastAPI server)
 
 
 
